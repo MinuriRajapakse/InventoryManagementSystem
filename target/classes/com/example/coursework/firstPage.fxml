@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.NetCafeController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#580053" height="600.0" layoutX="-4.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <ImageView fx:id="imageView" fitHeight="478.0" fitWidth="550.0" layoutX="250.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@Images/logoNew.png" />
+    </ImageView>
+    <Button layoutX="460.0" layoutY="515.0" mnemonicParsing="false" onAction="#onClickButton" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #ffd1fa;" text="Click">
+        <font>
+          <Font name="Lucida Sans Unicode" size="20.0" />
+        </font>
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+</AnchorPane>

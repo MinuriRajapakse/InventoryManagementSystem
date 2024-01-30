@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.NetCafeController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #580053;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="165.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" translateX="60.0" translateY="100.0">
+               <image>
+                  <Image url="@Images/logoNew.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#onManageItemsButtonClick" prefHeight="80.0" prefWidth="400.0" style="-fx-border-color: #ecb2dc; -fx-background-color: transparent; -fx-border-width: 1px 0px 1px 0px;" text="Manage items" textFill="#ecb2dc" translateY="200.0">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onManageDealersButtonClick" prefHeight="80.0" prefWidth="400.0" style="-fx-background-color: #ecb2dc; -fx-border-color: #ecb2dc; -fx-border-width: 1px 0px 1px 0px;" text="Manage dealers" textFill="#580053" translateY="200.0">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#onExitButtonClick" prefHeight="80.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: #ecb2dc; -fx-border-width: 0px 0px 0px 0px;" text="Exit" textFill="#ecb2dc" translateY="200.0">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="607.0" style="-fx-background-color: #ecb2dc;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="87.0" layoutY="263.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onRandomClick" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #fff;" text="Select Random Dealers">
+               <font>
+                  <Font name="Lucida Fax Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="274.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#onViewDealerClick" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #fff;" text="All Dealers">
+               <font>
+                  <Font name="Lucida Fax Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="450.0" layoutY="264.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onViewRandomDealerClick" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #fff;" text="Last Selected Dealers">
+               <font>
+                  <Font name="Lucida Fax Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Circle layoutX="545.0" layoutY="163.0" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient startX="0.6401515007019043" startY="0.5454545310049347">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3450980484485626" blue="0.32549020648002625" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="174.0" layoutY="178.0" radius="71.0" stroke="BLACK" strokeType="INSIDE" translateY="-20.0">
+               <fill>
+                  <LinearGradient startX="0.6401515007019043" startY="0.5454545310049347">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3450980484485626" blue="0.32549020648002625" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="366.0" layoutY="423.0" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient startX="0.6401515007019043" startY="0.5454545310049347">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3450980484485626" blue="0.32549020648002625" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <ImageView fitHeight="82.0" fitWidth="80.0" layoutX="131.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" translateY="-20.0">
+               <image>
+                  <Image url="@Images/icons8-select-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="80.0" layoutX="506.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-previous-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="80.0" layoutX="329.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-crowd-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
