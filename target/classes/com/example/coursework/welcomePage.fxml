@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.NetCafeController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #580053;" BorderPane.alignment="CENTER">
+         <ImageView fx:id="imageView" fitHeight="165.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" translateX="60.0" translateY="100.0">
+            <Image url="@Images/logoNew.png" />
+         </ImageView>
+         <Button mnemonicParsing="false" onAction="#onManageItemsButtonClick" prefHeight="80.0" prefWidth="400.0" style="-fx-border-color: #ecb2dc; -fx-background-color: transparent; -fx-border-width: 1px 0px 1px 0px;" text="Manage items" textFill="#ecb2dc" translateY="200.0">
+            <font>
+               <Font name="Lucida Fax Demibold" size="14.0" />
+            </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button mnemonicParsing="false" onMouseClicked="#onManageDealersButtonClick" prefHeight="80.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: #ecb2dc; -fx-border-width: 0px 0px 1px 0px;" text="Manage dealers" textFill="#ecb2dc" translateY="200.0">
+            <font>
+               <Font name="Lucida Fax Demibold" size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button mnemonicParsing="false" onMouseClicked="#onExitButtonClick" prefHeight="80.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: #ecb2dc; -fx-border-width: 0px 0px 0px 0px;" text="Exit" textFill="#ecb2dc" translateY="200.0">
+            <font>
+               <Font name="Lucida Fax Demibold" size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ecb2dc;" BorderPane.alignment="CENTER">
+         <Text fill="#6e0660" layoutX="159.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" textAlignment="CENTER" wrappingWidth="411.39306640625">
+            <font>
+               <Font name="Lucida Fax Demibold Italic" size="72.0" />
+            </font>
+         </Text>
+         <Text fill="#6e0660" layoutX="228.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO" textAlignment="CENTER" wrappingWidth="257.25970458984375">
+            <font>
+               <Font name="Lucida Fax Demibold Italic" size="48.0" />
+            </font>
+         </Text>
+         <Text layoutX="191.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ONE NET CAFE" textAlignment="CENTER" wrappingWidth="387.65948486328125">
+            <font>
+               <Font name="Lucida Fax Demibold Italic" size="45.0" />
+            </font>
+            <fill>
+               <LinearGradient endY="0.8863636589411534" startX="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.35789474844932556" green="0.019883040338754654" blue="0.3353606164455414" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.6707317073170732">
+                        <color>
+                           <Color red="0.3499999940395355" green="0.020999999716877937" blue="0.3280666768550873" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="0.25555557012557983" blue="0.9007407426834106" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </fill>
+         </Text>
+         <ImageView fitHeight="565.0" fitWidth="716.0" layoutX="84.0" layoutY="15.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Images/handshake.png" />
+            </image>
+         </ImageView>
+      </AnchorPane>
+   </center>
+</BorderPane>

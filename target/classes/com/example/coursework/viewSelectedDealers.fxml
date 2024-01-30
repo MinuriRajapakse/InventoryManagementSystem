@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #580053;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.NetCafeDealerItemsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd1fa" height="188.0" layoutX="239.0" layoutY="-88.0" rotate="-3.4" stroke="BLACK" strokeType="INSIDE" width="547.0" />
+      <TableView fx:id="dealersItemTable" layoutX="524.0" layoutY="304.0" prefHeight="273.0" prefWidth="463.0" AnchorPane.leftAnchor="524.0" AnchorPane.topAnchor="320.0">
+         <columns>
+            <TableColumn fx:id="viewDealerItemName" prefWidth="118.6666259765625" sortable="false" text="Name" />
+            <TableColumn fx:id="viewDealerItemBrand" prefWidth="110.66668701171875" sortable="false" text="Brand" />
+            <TableColumn fx:id="viewDealerItemPrice" prefWidth="129.66668701171875" sortable="false" text="Price" />
+            <TableColumn fx:id="viewDealerItemQuantity" prefWidth="101.0" sortable="false" text="Quantity" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="backButtonView" fitHeight="69.0" fitWidth="67.0" layoutX="12.0" layoutY="10.0" onMouseClicked="#onRandomDealersBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-back-48.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imageView" fitHeight="131.0" fitWidth="187.0" layoutX="818.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/logoNew.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="334.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random Dealers" wrappingWidth="318.37962722778315">
+         <font>
+            <Font name="Lucida Fax Demibold" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endY="0.47727270559831103" startX="0.7462121284369265" startY="0.5568181745933765">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3216063380241394" green="0.044199999421834946" blue="0.3400000035762787" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.7148148417472839" blue="0.9239506125450134" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecb2dc" height="272.0" layoutX="19.0" layoutY="321.0" stroke="BLACK" strokeType="INSIDE" width="494.0" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="321.0" />
+      <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="155.0" layoutY="172.0" onMouseClicked="#onDealerOneClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="130.0">
+         <image>
+            <Image url="@Images/dealer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="394.0" layoutY="169.0" onMouseClicked="#onDealerTwoClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="310.0" AnchorPane.topAnchor="130.0">
+         <image>
+            <Image url="@Images/dealer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="669.0" layoutY="187.0" onMouseClicked="#onDealerThreeClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="130.0">
+         <image>
+            <Image url="@Images/dealer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="944.0" layoutY="187.0" onMouseClicked="#onDealerFourClick" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="780.0" AnchorPane.topAnchor="130.0">
+         <image>
+            <Image url="@Images/dealer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="108.0" layoutY="467.0" text="Registration date: " AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font></Label>
+      <Label layoutX="115.0" layoutY="529.0" text="Contact No: " AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font></Label>
+      <Label layoutX="125.0" layoutY="585.0" text="Location: " AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="500.0">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font></Label>
+      <Text fx:id="selectedDealerLocation" layoutX="273.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="500.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fx:id="selectedDealerContactNo" layoutX="275.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fx:id="selectedDealerRegDate" layoutX="278.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fx:id="fourthDealerName" fill="WHITE" layoutX="826.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="-20.0" wrappingWidth="88.00000000000003" AnchorPane.leftAnchor="826.0" AnchorPane.topAnchor="259.892578125">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="thirdDealerName" fill="WHITE" layoutX="600.0" layoutY="275.107421875" strokeType="OUTSIDE" strokeWidth="0.0" translateX="-20.0" wrappingWidth="88.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="secondDealerName" fill="WHITE" layoutX="355.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="-20.0" wrappingWidth="88.0" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="firstDealerName" fill="WHITE" layoutX="131.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" translateX="-20.0" wrappingWidth="78.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

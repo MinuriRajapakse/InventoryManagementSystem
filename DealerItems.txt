@@ -1,0 +1,18 @@
+D1,Chairs,Piyestra,6250.00,13
+D1,Tables,Phoenix,13900.00,15
+D1,Coffee machine,Lavazza,120000.00,5
+D2,Desktop,Dell,225000.00,10
+D2,Laptop,DELL,125000.00,15
+D2,Speaker,Samsung,15000.00,16
+D3,Printer,Canon,10000.00,10
+D3,Scanner,HP,20500.00,12
+D3,Laptop,Lenovo,226900.00,15
+D4,Speaker,Lenovo,15000.00,11
+D4,Headset,JBL,12900.00,20
+D4,Mouse,Logitech,1990.00,25
+D5,Switches,HIKVISION,570.00,20
+D5,Tables,Phoenix,14400.00,15
+D5,Chairs,Phoenix,5999.00,20
+D6,Mouse,DELL,2000.00,15
+D6,Keyboard,HP,4500.00,12
+D6,Headset,Logitech,3690.00,9
